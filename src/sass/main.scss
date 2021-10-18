@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+$font: 'Lato', sans-serif;
+$big: 'Montserrat', sans-serif;
+$red: #ef2f3c;
+$white: #f6f4f3;
+$blue: #276fbf;
+$dark: #183059;
+$yellow: #f0a202;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font, sans-serif;
+  line-height: 1.5;
+  color: $dark;
+  background-image: url('../images/bg-pattern.png');
+  padding: 1em;
+}
+
+.countries-list {
+  border: 1px solid $yellow;
+  width: 300px;
+}
+
+.countries-list__image {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.countries-list__item {
+  font-family: inherit;
+  line-height: 1.5;
+  cursor: pointer;
+  color: $blue;
+  list-style-type: disc;
+}
+
+.countries-list__item:hover {
+  color: $yellow;
+  list-style-type: square;
+}
+
+.card {
+  max-width: 900px;
+}
+
+.wrapper--flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  padding: 1em;
+}
+
+.description {
+  margin-right: 50px;
+}
+
+.card-name {
+  text-align: start;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  width: 300px;
+  height: 60px;
+
+  padding: 1em;
+  margin-right: 1em;
+
+  font-family: $big;
+  font-weight: 700;
+  color: $blue;
+  // background-color: $dark;
+
+  border: 1px solid $yellow;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  padding: 1em;
+  font-family: $big;
+  font-weight: 700;
+  font-size: 1em;
+  // letter-spacing: 2px;
+  text-transform: uppercase;
+  
+color: $dark;
+border: 1px solid $yellow;
+border-radius: 10px;
+}
+
+button:hover {
+  color: $yellow;
+}
+
+.card-name,
+.text {
+  margin: 0;
+  color: $yellow;
+}
+
+.text {
+  padding-top: 10px;
+}
+
+.text-wrapper {
+  color: $dark;
+}
+
+.text-wrapper.text__timezones {
+  display: block;
+}
+
+h1 {
+  color: $dark;
+}
+
